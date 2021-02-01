@@ -48,7 +48,7 @@
   <script src="index.js"></script>
 
   <!-- Service Worker -->
-  <script>
+  <script type="text/javascript">(
     () =>
     {
       // Check if service worker in navigator
@@ -59,7 +59,11 @@
         .then(()=> { console.log('Service worker registration successful.'); })
         .catch((error) => { console.log('Service worker registration error. | ', error); })
       }
-    }
+      else
+      {
+        console.log('Could not find service worker in navigator.');
+      }
+    })();
   </script>
 
 </body>
