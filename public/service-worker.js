@@ -10,6 +10,8 @@ const FILES_TO_CACHE = [
   "icons/icon-512x512.png"
 ];
 
+console.log('Hello from service worker.');
+
 // install
 self.addEventListener("install", function (evt) {
   // pre cache image data
